@@ -197,7 +197,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/styles/variables.scss';
 
-/deep/ .nav-tabs {
+::v-deep .nav-tabs {
   padding: 15px 0;
   .nav-link {
     border-color: transparent;
@@ -211,15 +211,15 @@ export default {
 .desc {
   line-height: 3.5;
 }
-/deep/label {
+::v-deeplabel {
   color: #6c757d !important;
 }
-/deep/ .form-control, /deep/ .custom-select {
+::v-deep .form-control, ::v-deep .custom-select {
   border-radius: 0 !important;
   border-color: #e4eaec !important;
   color: #aaaaaa !important;
 }
-/deep/ .form-control::placeholder, /deep/ .custom-select::placeholder {
+::v-deep .form-control::placeholder, ::v-deep .custom-select::placeholder {
   color: #aaaaaa !important;
 }
 </style>

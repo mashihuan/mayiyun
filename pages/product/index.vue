@@ -106,14 +106,14 @@ export default {
 .card {
   border: none;
 }
-/deep/ .list-group-item {
+::v-deep .list-group-item {
   border-color: transparent;
   border-radius: 0;
 }
-/deep/ .list-group-item.active {
+::v-deep .list-group-item.active {
   background: $theme-color;
 }
-/deep/ .list-group-item:hover {
+::v-deep .list-group-item:hover {
   cursor: pointer;
 }
 </style>

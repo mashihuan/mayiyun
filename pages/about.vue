@@ -221,7 +221,7 @@ export default {
     }
   }
 }
-/deep/.nav-tabs .nav-item .nav-link {
+::v-deep.nav-tabs .nav-item .nav-link {
   border-color: transparent !important;
   font-size: 16px;
   color: #333;

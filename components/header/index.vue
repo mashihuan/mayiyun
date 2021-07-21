@@ -139,17 +139,17 @@ export default {
   z-index: 99;
 }
 
-/deep/.dropdown:hover .btn, /deep/.dropdown-item:hover {
+::v-deep.dropdown:hover .btn, ::v-deep.dropdown-item:hover {
   border-color: transparent;
   background: none;
 }
-/deep/.nav-link:hover,
-/deep/.dropdown-item:hover,
-/deep/ .navbar-nav .nav-link.active {
+::v-deep.nav-link:hover,
+::v-deep.dropdown-item:hover,
+::v-deep .navbar-nav .nav-link.active {
   color: $theme-color !important;
 }
 
-/deep/.navbar-toggler {
+::v-deep.navbar-toggler {
   padding: 0;
   border: none;
   outline: none;
@@ -192,10 +192,10 @@ export default {
 .dropdown-toggle .active {
   color: $theme-color;
 }
-/deep/ .nav-link {
+::v-deep .nav-link {
   color: #fff !important;
 }
-/deep/ .navbar {
+::v-deep .navbar {
   background: transparent !important;
   &.active {
     background: #fff !important;
@@ -220,7 +220,7 @@ export default {
   }
 }
 @media screen and (max-width: 992px) {
-  /deep/ .navbar {
+  ::v-deep .navbar {
     background: #fff !important;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
     &.active2 {
@@ -245,10 +245,10 @@ export default {
   }
 }
 @media screen and (min-width: 992px) {
-  /deep/.dropdown:hover .dropdown-menu {
+  ::v-deep.dropdown:hover .dropdown-menu {
     display: block;
   }
-  /deep/ .dropdown-menu {
+  ::v-deep .dropdown-menu {
     display: none;
     margin-top: 20px;
     border-color: transparent;
